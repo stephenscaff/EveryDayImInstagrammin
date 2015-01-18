@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+
+<!-- Title and Meta
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Everyday I'm Instagrammin' | by Stephen Scaff</title>
+
+<meta name="description" content="A simple little plugin to display an instagram feed, with some captions styles.">
+<meta name="author" content="Stephen Scaff">
+
+<!-- Mobile Specific Meta
+================================================== -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+
+<!-- CSS
+================================================== -->
+<link	rel="stylesheet"	href="app.css"	/>
+
+</head>
+
+
+<!-- Banner
+================================================== -->
+
+<section class="sect-banner xxl">
+<div id="" class="row">
+  <ul class="instagram">
+  </ul>
+</div>
+</section>
+
+<!-- Le javascript
+================================================== -->	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" ></script>
+<script type='text/javascript' src='everydayiminstagrammin.min.js'></script>
+
+
+<script>
+// Trusting you here not to use my stuffs
+$('.instagram').everydayImInstagrammin({
+	clientID: 'add your id here',
+	accessToken: 'add your token here',
+	numberPics: '12',
+	imgClass: 'insta-img',
+	captions: 'true',
+	captionAlign: 'bottom',
+	sequenceFadeIn: 'true',
+	sequenceDuration: 300,
+});
+</script>
+
+</body>
+</html>
