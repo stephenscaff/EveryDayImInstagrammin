@@ -11,7 +11,7 @@ Since Instagram's API uses the OAUTH 2.0 protocol, you'll need to snag the clien
 
 
 ## Not Sure How To That?
-Well, you can go register an Instagram client over at Instagram's dev portal, or just use this [this handy tool]("http://www.pinceladasdaweb.com.br/instagram/access-token/)
+Well, you can go register an Instagram client over at Instagram's dev portal, or just use this handy little tool [Here→]("http://www.pinceladasdaweb.com.br/instagram/access-token/)
 
 
 ## Let's Set It Up
