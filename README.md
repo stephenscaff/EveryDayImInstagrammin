@@ -28,8 +28,8 @@ Now just initialize it off your class, adding your account's clientID and Access
 
 ```javascript
  $('.instagrammin').everydayImInstagrammin({
-   clientID: '472977947',
-   accessToken: '300619084.817864a.ccc422467e254e0a81d79e58e13b9410',
+   clientID: 'your-client-id',
+   accessToken: 'your-access-token',
    urlType: InstaUser,
    numberPics: '12',
    imgClass: 'insta-img',
