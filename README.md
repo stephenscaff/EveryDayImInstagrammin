@@ -1,5 +1,5 @@
 # Every Day I'm Instagrammin!
-A little Jquery plugin (4kb - unminified) that snags and display Instagram pics by User or HashTag, with some caption styles.. See it in action at: [instagrammin.sosweetcreative.com](http://instagrammin.sosweetcreative.com)
+A little Jquery plugin (4kb - unminified) that snags and display Instagram pics by User or HashTag, with some caption styles.. See it in action at this stupid long url: [everydayiminstagrammin.stephenscaff.com](http://everydayiminstagrammin.stephenscaff.com/)
 
 
 ## Wait, Another Freakin' Instagram Plugin?
@@ -66,7 +66,7 @@ Um... how about a sexy-ass sequence fade in, one image at a time? Just set the o
 
 
 ## Check it 
-Peep Every Day I'm Instagrammin' in action [Here→](http://instagrammin.sosweetcreative.com), 
+Peep Every Day I'm Instagrammin' in action [Here→](http://everydayiminstagrammin.stephenscaff.com/), 
 
 ## Demo Docs
 I've added some docs to demo set up with basic options and required styles. But, you'll still need to add your access token and client id where indicated at the bottom of demo.html.
