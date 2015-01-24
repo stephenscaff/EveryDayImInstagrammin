@@ -1,4 +1,5 @@
 /*global jQuery */
+/*jshint unused:false */
 
 /*-------------------------------
 * Every Day I'm Instagrammin'
@@ -42,7 +43,7 @@ $('.instagram').everydayImInstagrammin({
 			sequenceDuration: '220',
 			captions: 'false',
 			captionAlign: 'bottom',
-			InstaType: 'instaUser'
+			instaType: 'instaUser'
 		}
 	};
 	$.fn.extend({
@@ -57,10 +58,10 @@ $('.instagram').everydayImInstagrammin({
 				var sequenceFadeIn = options.sequenceFadeIn;
 				var sequenceDuration = options.sequenceDuration;
 				var captionAlign = options.captionAlign;
-				var hashtag = options.hashTag; // #hashtag
+				var hashTag = options.hashTag; // #hashTag
 				var instaUrl = 'https://api.instagram.com/v1/users/' + clientID + '/media/recent/?access_token=' + accessToken + '&callback=?';
-				if (options.InstaType == 'byHash') {
-					instaUrl = 'https://api.instagram.com/v1/tags/' + hashtag + '/media/recent/?access_token=' + accessToken + '&callback=?';
+				if (options.instaType === 'byHash') {
+					instaUrl = 'https://api.instagram.com/v1/tags/' + hashTag + '/media/recent/?access_token=' + accessToken + '&callback=?';
 				}
 				$.ajax({
 					type: "GET",
@@ -79,23 +80,23 @@ $('.instagram').everydayImInstagrammin({
 								elem.append("<li class='everyday-item'><a target='_blank' href='" + data.data[i].link + "'><img class='" + options.imgClass + "' src='" + data.data[i].images.standard_resolution.url + "'  /></a></li>");
 							}
 						}
-						if (options.captionAlign == 'bottom') {
+						if (options.captionAlign === 'bottom') {
 							$('.everyday-caption p').css({
 								position: 'absolute',
 								bottom: '10px'
 							});
 						}
-						if (options.captionAlign == 'top') {
+						if (options.captionAlign === 'top') {
 							$('.everyday-caption p').css({
 								position: 'absolute',
 								top: '10px'
 							});
 						}
-						if (options.sequenceFadeIn == 'true') {
-							eT = 0;
+						if (options.sequenceFadeIn === 'true') {
+							var sequenceFade = 0;
 							$('.' + imgClass).hide().each(function() {
-								$(this).delay(eT).fadeIn(300);
-								eT += sequenceDuration;
+								$(this).delay(sequenceFade).fadeIn(500);
+								sequenceFade += sequenceDuration;
 							});
 						}
 						//captions
