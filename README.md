@@ -15,7 +15,7 @@ Well, you can go register an Instagram client over at Instagram's dev portal, or
 
 
 ## Let's Set It Up
-The plugin outputs your feed's images as list items, so first set up an unordered list with a unique class. By defulat, the image output with the class name `.everyday-img`, but you can define your own image class like so `imgClass: 'insta-img'`. The actual list items output with the class everyday-item.
+The plugin outputs your feed's images as list items, so first set up an unordered list with a unique class. By default, the image output with the class name `.everyday-img`, but you can define your own image class like so `imgClass: 'insta-img'`. The actual list items output with the class everyday-item.
 
 
 ```html
@@ -40,13 +40,13 @@ Now just initialize it off your class, adding your account's clientID and Access
 ```
 
 ## By You Or By Tag
-By default, EveryDay drops pics from your dope-ass feed. But, wait... there's more! Drop pics by hashtag by via option `InstaType: 'byHash'`, then set your desired hashtag `hashTag: 'httpster'`.
+By default, EveryDay drops pics from your dope-ass feed. But, wait... there's more! Drop pics by hashtag by via option `instaType: 'byHash'`, then set your desired hashtag `hashTag: 'httpster'`.
 
 ## How About Some Captions?
-Gotcha covered. Just set the option captions: 'True' and the pic's captions will appear via a simple hover overlay. The overlay can be styled with css and the caption themselves can be aligned via `captionAlign: 'top'` and `captionAlign: 'bottom'`. Not a fan of using js for styling unless it's unavoidable, so I've included the minimum styles required for the caption hovers. Of course, you can easily alter to best suit your use.
+Gotcha covered. Just set the option `captions: 'true'` and the pic's captions will appear via a simple hover overlay. The overlay can be styled with css and the caption themselves can be aligned via `captionAlign: 'top'` and `captionAlign: 'bottom'`. Not a fan of using js for styling unless it's unavoidable, so I've included the minimum styles required for the caption hovers. Of course, you can easily alter to best suit your use.
 
 ## Anything Else
-Um... how about a sexy-ass sequence fade in, one image at a time? Just set the option sequenceFadeIn: 'true' then define the duration `sequenceDuration: '250'`
+Um... how about a sexy-ass sequence fade in, one image at a time? Just set the option `sequenceFadeIn: 'true'` then define the duration `sequenceDuration: '250'`
 
 
 
@@ -56,7 +56,7 @@ Um... how about a sexy-ass sequence fade in, one image at a time? Just set the o
 | :-------------			| :-------------------------------:  | :------------:
 | clientID      			| Instagram api client ID          	 | null 
 | accessToken   			| Your instagram accessToken    					| null
-| InstaType     			| Show Pics by byUser or byHash  				| byUser  
+| instaType     			| Show Pics by byUser or byHash  				| byUser  
 | hashTag      	 		| Selects hashtag for byHash  			  		|	null
 | numberPics   				| Number of pics to show       						| 12
 | imgClass  							| Defines class for images       			 | '.everyday-img'
