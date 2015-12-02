@@ -27,8 +27,8 @@ $('.instagram').everydayImInstagrammin({
 	captionAlign: 'bottom',
 	sequenceFadeIn: 'true',
 	sequenceDuration: 300,
-	InstaType: 'byHash',
-	hashTag: 'pigeonwisdom'
+	instaType: 'byHash', //byHash
+	hashTag: 'pigeonwisdom' //if byHash
 });
 
 ----------------------------------*/
