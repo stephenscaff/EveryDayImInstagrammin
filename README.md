@@ -15,7 +15,7 @@ Well, you can go register an Instagram client over at Instagram's dev portal, or
 
 
 ## Let's Set It Up
-The plugin outputs your feed's images as list items, so first set up an unordered list with a unique class. By default, the image output with the class name `.everyday-img`, but you can define your own image class like so `imgClass: 'insta-img'`. The actual list items output with the class everyday-item.
+The plugin outputs your feed's images as list items, so first set up an unordered list with a unique class. By default, the image output with the class name `.insta__img`, but you can define your own image class like so `imgClass: 'insta-img'`. The actual list items output with the class everyday-item.
 
 
 ```html
@@ -59,7 +59,7 @@ Um... how about a sexy-ass sequence fade in, one image at a time? Just set the o
 | instaType     			| Show Pics by byUser or byHash  				| byUser  
 | hashTag      	 		| Selects hashtag for byHash  			  		|	null
 | numberPics   				| Number of pics to show       						| 12
-| imgClass  							| Defines class for images       			 | '.everyday-img'
+| imgClass  							| Defines class for images       			 | '.insta__img'
 | captions   						| Number of pics to show     					   | 2000
 | captionsAlign  		| Align captions to 'top' or 'bottom | bottom
 | sequenceDuration	| Duration of sequence fade ins   			| 220
