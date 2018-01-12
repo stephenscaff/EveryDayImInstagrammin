@@ -31,7 +31,7 @@
               clientID = options.clientID,
               accessToken = options.accessToken,
               numberPics = options.numberPics,
-              instaUrl = 'https://api.instagram.com/v1/user/' + clientID + '/media/recent/?access_token=' + accessToken + '&callback=?';
+              instaUrl = 'https://api.instagram.com/v1/users/' + clientID + '/media/recent/?access_token=' + accessToken + '&callback=?';
 
         $.ajax({
           type: 'GET',
